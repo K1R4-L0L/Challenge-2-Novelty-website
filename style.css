@@ -321,4 +321,18 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    animation-name: mymove;
+    position: relative;
+    animation: mymove 10s infinite ;
 }
+
+@keyframes mymove {
+    from {left: -1000px ;}
+    to {left: 100px;}
+}
+
+#grad1 {
+    height: 10px;
+    background-color: rgb(133, 0, 51); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,rgb(133, 0, 51) , rgb(95, 10, 145));
+  }
