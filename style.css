@@ -84,6 +84,7 @@ html, body  {
 }
 
 .F {
+    order: 1;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -92,6 +93,15 @@ html, body  {
     cursor:crosshair;
     padding: .5%;
     color: #138c4c;
+    margin-left: 11%;
+    margin-bottom: -7%;
+}
+.F-image {
+    order: 2;
+    align-self: flex-end;
+    animation-name: mymove1;
+    position: relative;
+    animation: mymove1 10s infinite ;
 }
 
 .G {
@@ -161,6 +171,7 @@ html, body  {
 }
 
 .M {
+    order: 1;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -169,6 +180,16 @@ html, body  {
     cursor:ne-resize;
     padding: .5%; 
     color: #8c4c13;
+    margin-left: 3%;
+}
+
+.M-image {
+    order: 2;
+    align-self: flex-end;
+    animation-name: mymove1;
+    position: relative;
+    animation: mymove1 10s infinite ;
+    
 }
 
 .N {
@@ -235,8 +256,16 @@ html, body  {
     cursor:row-resize;
     padding: .5%; 
     color: #8c4c13;
+    margin-left: 11%;
+    margin-bottom: -4%;
 }
-
+.S-image {
+    order: 2;
+    align-self: flex-end;
+    animation-name: mymove1;
+    position: relative;
+    animation: mymove1 10s infinite ;
+}
 .T {
     display:flex;
     flex-direction: row;
@@ -297,6 +326,9 @@ button {
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #fadcec;
+    animation-name: mymove2;
+    position: relative;
+    animation: mymove2 3s infinite ;
   }
   
   .button:hover {background-color: #570f4d}
@@ -328,11 +360,20 @@ button {
 
 @keyframes mymove {
     from {left: -1000px ;}
+    to {left: 940px;}
+}
+@keyframes mymove1 {
+    from {left: -1000px ;}
+    to {left: 400px;}
+}
+@keyframes mymove2 {
+    from {left: -800px ;}
     to {left: 100px;}
 }
-
 #grad1 {
     height: 10px;
     background-color: rgb(133, 0, 51); /* For browsers that do not support gradients */
     background-image: linear-gradient(to right,rgb(133, 0, 51) , rgb(95, 10, 145));
   }
+
+  
